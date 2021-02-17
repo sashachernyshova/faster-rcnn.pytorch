@@ -17,6 +17,8 @@ from datasets.imagenet import imagenet
 from datasets.vg import vg
 
 import numpy as np
+from datasets.GOD import GOD
+
 
 # Set up voc_<year>_<split>
 for year in ['2007', '2012']:
