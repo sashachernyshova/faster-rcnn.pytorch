@@ -24,6 +24,12 @@ for year in ['2007', '2012']:
     name = 'voc_{}_{}'.format(year, split)
     __sets[name] = (lambda split=split, year=year: pascal_voc(split, year))
 
+# Set up GOD_<year>_<split>
+for year in ['2019']:
+    for split in ['train', 'test']:
+        name = 'GOD_{}_{}'.format(year, split)
+        __sets[name] = (lambda split=split, year=year: GOD(split, year))
+
 # Set up coco_2014_<split>
 for year in ['2014']:
   for split in ['train', 'val', 'minival', 'valminusminival', 'trainval']:
