@@ -121,6 +121,10 @@ if __name__ == '__main__':
       args.imdb_name = "imagenet_train"
       args.imdbval_name = "imagenet_val"
       args.set_cfgs = ['ANCHOR_SCALES', '[8, 16, 32]', 'ANCHOR_RATIOS', '[0.5,1,2]']
+  elif args.dataset == "GOD":
+      args.imdb_name = "GOD_2019_train"
+      args.imdbval_name = "GOD_2019_test"
+      args.set_cfgs = ['ANCHOR_SCALES', '[4, 8, 16, 32, 64, 128, 256, 512]', 'ANCHOR_RATIOS', '[1,2,3,4,5]']
   elif args.dataset == "vg":
       args.imdb_name = "vg_150-50-50_minitrain"
       args.imdbval_name = "vg_150-50-50_minival"
